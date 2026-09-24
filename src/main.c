@@ -10,6 +10,7 @@ void playAnimation(Actor *arg0, s32 arg2);
 RECOMP_CALLBACK("*", dk64recomp_every_frame) void dance(void) {
     if (newly_pressed_input[0] & 0x20) {
         if (!(gCurrentPlayer->unk6A & 1)) return;
+        if (gCurrentPlayer->unk58 > 7) return;
         switch (gCurrentPlayer->control_state) {
             case 0xC: // Idle
             case 0xD: // Walking
