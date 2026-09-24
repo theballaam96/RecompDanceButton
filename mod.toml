@@ -1,0 +1,16 @@
+[manifest]
+id = "dance_button"
+version = "1.0.0"
+display_name = "Dance Button"
+description = "dance button please"
+short_description = "dance button please"
+authors = [ "Ballaam", "Dario" ]
+game_id = "dk64"
+minimum_recomp_version = "1.0.0"
+
+[inputs]
+elf_path = "build/mod.elf"
+mod_filename = "dance_button"
+func_reference_syms_file = "Dk64Syms/dump.toml"
+data_reference_syms_files = [ "Dk64Syms/data_dump.toml" ]
+additional_files = ["thumb.dds"]
